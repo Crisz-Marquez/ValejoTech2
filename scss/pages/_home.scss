@@ -1,0 +1,206 @@
+// Breakpoint - Medio Queries
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xxxl: 1600px;
+
+.home {
+    position: relative;
+    height: 100vh;
+    background: url('/assets/images/page/fondo-menu.webp') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    &__content {
+        z-index: 1;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: "Dosis", serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+        @media (max-width: $breakpoint-lg) {
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .content__img, .logo {
+            background-color: white;
+            width: 25em;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.541);
+            @media (max-width: $breakpoint-xxxl) {
+                width: 20em;
+            }
+            @media (max-width: $breakpoint-xxl) {
+                width: 18em;
+            }
+            @media (max-width: $breakpoint-xl) {
+                width: 16em;
+            }
+            @media (max-width: $breakpoint-lg) {
+                width: 11em;
+            }
+            @media (max-width: $breakpoint-md) {
+                display: none;
+            }
+        }
+        .content__img {
+            @media (max-width: $breakpoint-lg) {
+                margin-bottom: 2em;
+            } 
+        }
+
+        .content__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            @media (max-width: $breakpoint-lg) {
+                margin-bottom: 4em;
+                width: 100%;
+            }
+            @media (max-width: $breakpoint-sm){
+                width: 80%;
+            }
+            .tittle, h1 {
+                color: white;
+                font-size: 3em;
+                padding-bottom: 0.1rem;
+                font-weight: 600;
+                @media (max-width: $breakpoint-xxxl) {
+                    font-size: 2.8em;
+                }
+                @media (max-width: $breakpoint-xxl) {
+                    font-size: 2.6em;
+                }
+                @media (max-width: $breakpoint-xl) {
+                    font-size: 2.4em;
+                }
+                @media (max-width: $breakpoint-sm) {
+                    margin-top: 0.5em;
+                    font-size: 2em;
+                }
+            }
+            .subtttle, h2 {
+                color: white;
+                font-size: 1.7em;
+                font-weight: 500;
+                padding-bottom: 0.1rem;
+                @media (max-width: $breakpoint-xxxl) {
+                    font-size: 1.6em;
+                }
+                @media (max-width: $breakpoint-xxl) {
+                    font-size: 1.5em;
+                }
+                @media (max-width: $breakpoint-xl) {
+                    font-size: 1.4em;
+                }
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 1.3em;
+                }
+            }
+            .subtttle-1, p {
+                color: rgb(255, 255, 255);
+                font-size: 1.7em;
+                font-weight: 500;
+                padding-bottom: 0.5rem;
+                @media (max-width: $breakpoint-xxxl) {
+                    font-size: 1.6em;
+                }
+                @media (max-width: $breakpoint-xxl) {
+                    font-size: 1.5em;
+                }
+                @media (max-width: $breakpoint-xl) {
+                    font-size: 1.4em;
+                }
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 1.3em;
+                    margin-top: 0.5em;
+                }
+            }
+            .bottom {
+                display: inline-block;
+                font-size: 1.4rem;
+                padding: 0.5em 2em;
+                font-family: "Dosis", serif;
+                letter-spacing: 2px;
+                background-color: #004c9c;
+                color: rgb(255, 255, 255);
+                font-weight: 600;
+                text-decoration: none;
+                transition: background-color 0.2s;
+                box-shadow: 0px 0px 10px 0px rgb(1, 1, 117);
+                border-radius: 50px;
+                &:hover {
+                    font-size: 1.4rem;
+                    background-color: white;
+                    box-shadow: 0px 0px 10px 0px rgb(247, 247, 247);
+                    color: black;
+                    @media (max-width: $breakpoint-xxxl) {
+                        font-size: 1.3em;
+                    }
+                    @media (max-width: $breakpoint-xxl) {
+                        font-size: 1.2em;
+                    }
+                    @media (max-width: $breakpoint-sm) {
+                        font-size: 1.2em;
+                    }
+                }
+                @media (max-width: $breakpoint-xxxl) {
+                    font-size: 1.3em;
+                }
+                @media (max-width: $breakpoint-xxl) {
+                    font-size: 1.2em;
+                }
+                @media (max-width: $breakpoint-sm) {
+                    font-size: 1.2em;
+                }
+            }
+            .samsung__logo {
+                position: fixed;
+                bottom: 1em;
+                right: 1em;
+                z-index: 50;
+                transition: transform 0.2s ease;
+                margin: 2.5%;
+                &:hover {
+                    transform: scale(1.025);
+                    box-shadow: 0px 0px 10px 0px black;
+                }
+                img {
+                    max-width: 11em;
+                    @media (max-width: $breakpoint-xxxl) {
+                        max-width: 10em;
+                    }
+                    @media (max-width: $breakpoint-xxl) {
+                        max-width: 9em;
+                    }
+                    @media (max-width: $breakpoint-xl) {
+                        max-width: 8em;
+                    }
+                    @media (max-width: $breakpoint-lg) {
+                        max-width: 7em;
+                    }
+                    @media (max-width: $breakpoint-md) {
+                        max-width: 6em;
+                    }
+                    @media (max-width: $breakpoint-sm) {
+                        max-width: 5.5em;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

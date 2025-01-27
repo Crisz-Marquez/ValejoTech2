@@ -1,0 +1,29 @@
+// Importar herramientas globales
+@use "abstracts/_variables";
+@use "abstracts/_mixins.scss";
+@use "abstracts/_placeholders";
+
+// Importar estilos base
+@use "base/base";
+@use "base/_reset";
+@use "base/_typography";
+
+// Importar componentes
+@use "components/_buttons";
+@use "components/_cards";
+
+// Importar layout
+@use "layout/_header";
+@use "layout/_footer";
+@use "layout/_grid";
+@use "layout/_navigation";
+
+// Importar estilos específicos de página
+@use "pages/_home";
+@use "pages/_about";
+@use "pages/_services";
+
+// Vendors
+
+
+
