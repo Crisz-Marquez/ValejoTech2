@@ -68,8 +68,8 @@ $breakpoint-xxxl: 1600px;
             @media (max-width: $breakpoint-sm){
                 width: 80%;
             }
-            .tittle {
-                color: white;
+            #tittle {
+                color: rgb(0, 0, 0);
                 font-size: 10px;
                 padding-bottom: 1em;
                 font-weight: 600;
