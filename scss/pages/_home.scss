@@ -68,13 +68,13 @@ $breakpoint-xxxl: 1600px;
             @media (max-width: $breakpoint-sm){
                 width: 80%;
             }
-            .tittle, h1 {
+            .tittle {
                 color: white;
-                font-size: 3em;
-                padding-bottom: 0.1rem;
+                font-size: 10px;
+                padding-bottom: 1em;
                 font-weight: 600;
                 @media (max-width: $breakpoint-xxxl) {
-                    font-size: 2.8em;
+                    font-size: 2.1em;
                 }
                 @media (max-width: $breakpoint-xxl) {
                     font-size: 2.6em;
